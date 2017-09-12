@@ -1,0 +1,4 @@
+[submodule "libraries/miniexp"]
+	path = libraries/miniexp
+	url = https://github.com/CarmineCella/miniexp.git
+	branch = master
