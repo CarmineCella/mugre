@@ -27,13 +27,14 @@ void grep (const string& filename, char* regex) {
 }
 int main (int argc, char* argv[]) {
 	try {
-		if (argc < 3) {
+        if (argc < 3) {
 			throw runtime_error ("syntax is 'mugre regex file1 file2...");
 		} else {
 			for (unsigned i = 2; i < argc; ++i) {
 				grep (argv[i], argv[1]);
 			}
 		}
+
 	}
 	catch (exception& e) {
 		cout << "Error: " << e.what () << endl;

@@ -18,3 +18,7 @@ target_include_directories(mugre
 target_link_libraries(mugre
     PRIVATE miniexp
 )
+
+INSTALL(
+    TARGETS mugre
+    RUNTIME DESTINATION bin)
