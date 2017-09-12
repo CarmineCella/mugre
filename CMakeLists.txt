@@ -7,6 +7,8 @@ set(binary_SOURCES
     src/mugre.cpp
 )
 
+link_directories(${PROJECT_SOURCE_DIR}/libraries/miniexp/build)
+
 add_executable(mugre ${binary_SOURCES})
 
 target_include_directories(mugre
