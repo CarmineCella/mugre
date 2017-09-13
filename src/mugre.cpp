@@ -20,7 +20,7 @@ void grep (const string& filename, char* regex) {
 		string line;
 		getline (in, line);
 		if (miniexp::match (regex, (char*) line.c_str ())) {
-			cout << linum << ": " << line << endl;
+			cout << filename << ", " << linum << ": " << line << endl;
 		}
 		++linum;
 	}
