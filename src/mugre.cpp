@@ -2,7 +2,6 @@
 // 
 
 #include "miniexp.h"
-#include "tests.h"
 
 #include <stdexcept>
 #include <iostream>
@@ -28,7 +27,6 @@ void grep (const string& filename, char* regex) {
 	}
 }
 int main (int argc, char* argv[]) {
-    say_hello ();
 	try {
         if (argc < 3) {
 			throw runtime_error ("syntax is 'mugre regex file1 file2...");
